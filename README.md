@@ -1,19 +1,20 @@
 # dead simple relaxed json
 
-a preprocessor(lib and bin) with zero dependency
+usage: `let j: String = dsrj::compile(&string)`.
+dsrj never fails, UB for invalid input.
 
-json but:
+a preprocessor compile dsrj to json. dsrj is json but:
 
 * allow hash comment, but only at non-blank begin of line
 
-* allow trailing comma, but only at end of line
-(the first non-blank char of next line is `]` or `}`)
+* allow trailing comma, but only at the end of line,
+so the first non-blank char of next line is `]` or `}`
 
 example:
 
 ```
 {
-	// example dsrj
+	# example dsrj
 	"a": "b",
 }
 ```

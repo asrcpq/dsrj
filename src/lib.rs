@@ -5,9 +5,10 @@ pub fn compile(input: &str) -> String {
 		match line.chars().next() {
 			Some('#') | None => continue,
 			Some('}') | Some(']') => {
-				let prev_line = result.last_mut().unwrap();
-				if let Some(',') = prev_line.chars().last() {
-					prev_line.pop();
+				if let Some(prev_line) = result.last_mut() {
+					if let Some(',') = prev_line.chars().last() {
+						prev_line.pop();
+					}
 				}
 			}
 			_ => {}
