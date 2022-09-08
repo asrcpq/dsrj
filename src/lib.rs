@@ -1,3 +1,5 @@
+// TODO: implement a bufwriter
+// TODO: handle error
 pub fn compile(input: &str) -> String {
 	let mut result: Vec<String> = Vec::new();
 	for line in input.split('\n') {

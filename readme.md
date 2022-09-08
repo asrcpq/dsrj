@@ -7,16 +7,9 @@ A preprocessor compiles dsrj to json: dsrj is json but:
 * allow hash comment, but only at non-blank begin of line
 
 * allow trailing comma, but only at the end of line,
-so the first non-blank char of next line is `]` or `}`
+so the first non-blank char of next non-blank, non-comment line is `]` or `}`
 
-example:
-
-```
-{
-	# example dsrj
-	"a": "b",
-}
-```
+example: see `/example.rjson`
 
 ## Notes
 

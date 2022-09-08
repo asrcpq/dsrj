@@ -1,0 +1,6 @@
+{
+	# example dsrj
+	"foo": 123,
+	"bar": 456,
+	# comment allowed here
+}
